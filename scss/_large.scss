@@ -1,0 +1,39 @@
+body {
+  margin: auto;
+  max-width: 75rem;
+}
+
+
+
+  nav {
+    max-width: 75rem;
+    margin: auto;
+    li {
+      width: 10%;
+    }
+  }
+
+  // div.headerWrapper {
+    
+  // }
+
+  header {
+    max-width: 75rem;
+    margin: auto;
+  } 
+
+  div.flexed {display: flex; flex-wrap: wrap;}
+
+  @for $i from 1 through 12 {
+          $w:($i / 12) * 100%;
+          .large-#{$i} {flex-basis: $w;}	
+  } // end loop
+
+  main {
+    margin: auto;
+    max-width: 75rem;
+  }
+
+  .attourney {
+    padding: 2%;
+  }

@@ -1,0 +1,28 @@
+  nav {
+    button {display: none;}
+    ul.hide {
+      display: block;
+    }
+    li {
+      width: 15%;
+    }
+  }
+
+  div.flexed {display: flex; flex-wrap: wrap;}
+
+  @for $i from 1 through 12 {
+          $w:($i / 12) * 100%;
+          .medium-#{$i} {flex-basis: $w;}	
+  } // end loop
+
+  h2 {
+    padding: 2%;
+  }
+
+  .tipDay {
+    margin: 1%;
+  }
+  // div.headerWrapper {
+    
+  // }
+ 
