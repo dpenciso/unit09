@@ -1,12 +1,12 @@
 body {
   margin: auto;
-  max-width: 75rem;
+  max-width: 64rem;
 }
 
 
 
   nav {
-    max-width: 75rem;
+    
     margin: auto;
     li {
       width: 10%;
@@ -18,20 +18,37 @@ body {
   // }
 
   header {
-    max-width: 75rem;
+    
     margin: auto;
   } 
 
-  div.flexed {display: flex; flex-wrap: wrap;}
+  div.cardsDiv:nth-child(1) {
+    background-image: url(../images/card1.jpg);
+    width: 25%;
+  }
 
-  @for $i from 1 through 12 {
-          $w:($i / 12) * 100%;
-          .large-#{$i} {flex-basis: $w;}	
-  } // end loop
+  
+  div.cardsDiv:nth-child(2) {
+    background-image: url(../images/card2.jpg);
+    width: 25%;
+  }
+
+  
+  div.cardsDiv:nth-child(3) {
+    background-image: url(../images/card3.jpg);
+    width: 25%;
+  }
+
+  
+  div.cardsDiv:nth-child(4) {
+    background-image: url(../images/card4.jpg);
+    width: 25%;
+  }
+
 
   main {
     margin: auto;
-    max-width: 75rem;
+    
   }
 
   .attourney {

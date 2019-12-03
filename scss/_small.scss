@@ -51,12 +51,12 @@ body {
   display: none;
 }
 
-button {
+.navButton {
   height: 50px;
   width: 50px;
 }
 
-button:hover {
+.navButton:hover {
   color: white;
   background-color: $primaryColor;
 }
@@ -91,6 +91,92 @@ nav {
   }
 }
 
+ul.slick-dots li {
+  display: none;
+}
+
+.boston {
+  width: 100%;
+}
+
+picture {
+  position: relative;
+  div {
+    position: absolute;
+    bottom: 0;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.plan {
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+
+.monument {
+  width: 20%;
+  margin-left: 40%;
+  margin-top: 10%;
+}
+
+.cardsDiv {
+  margin-bottom: 5%;
+}
+
+div.cardsDiv:nth-child(1) {
+  background-image: url(../images/card1.jpg);
+}
+
+div.cardsDiv:nth-child(1) a {
+  background-color: green;
+}
+
+div.cardsDiv:nth-child(2) {
+  background-image: url(../images/card2.jpg);
+}
+
+div.cardsDiv:nth-child(2) a {
+  background-color: yellow;
+}
+
+div.cardsDiv:nth-child(3) {
+  background-image: url(../images/card3.jpg);
+}
+
+div.cardsDiv:nth-child(3) a {
+  background-color: aqua;
+}
+
+div.cardsDiv:nth-child(4) {
+  background-image: url(../images/card4.jpg);
+}
+
+div.cardsDiv:nth-child(4) a {
+  background-color: $secondaryColor;
+}
+
+div.cardsDiv a:hover {
+  background: none;
+  text-shadow: 0 0 4px black;
+}
+
+div.cardsDiv a {
+  display: block;
+  width: 100%;
+  height: 300px;
+  text-decoration: none;
+  padding: 0 2%;
+  transition: all .5s ease-in;
+}
+
+h3 {
+  color: black;
+  text-align: center;
+}
 
 div.flexed {display: flex; flex-wrap: wrap;}
 
@@ -136,110 +222,7 @@ h2{
   padding: 1rem 2%;
 }
 
-h2.case {
-  border-style: solid rgb(255, 255, 255);
-  border-width: 1.5px;
-  box-shadow: 2px 2px 10px rgb(0, 0, 0);
-  padding: 5%;
-  margin: .5rem 2%;
-  background-color: $primaryColor;
-  color: white;
-  text-shadow: 1px 1px 3px black;
-}
 
-h2.case:hover {
-  background-color: $secondaryColor;;
-}
-
-.blogText {
-  border-style: solid rgb(255, 255, 255);
-  border-width: 1.5px;
-  box-shadow: 2px 2px 10px rgb(0, 0, 0);
-  padding: 0;
-  margin: 5% 2% 0 2%;
-  background-color: $secondaryColor;
-  color: white;
-  text-shadow: 1px 1px 3px black;
-}
-
-.tip {
-  border-style: solid rgb(255, 255, 255);
-  border-width: 1.5px;
-  box-shadow: 2px 2px 10px rgb(0, 0, 0);
-  padding: 0;
-  margin: 5% 2% 0 2%;
-  background-color: $secondaryColor;
-  color: white;
-  text-shadow: 1px 1px 3px black;
-}
-
-.tipDay {
-  border-style: solid rgb(255, 255, 255);
-  border-width: 1.5px;
-  box-shadow: 2px 2px 10px rgb(0, 0, 0);
-  padding: 0;
-  margin: 5% 2% 0 2%;
-  background-color: $secondaryColor;
-  color: white;
-  text-shadow: 1px 1px 3px black;
-}
-
-figure {
-  width: 100%;
-  padding: 0;
-  margin: 0;
-}
-
-.lawyer {
-  margin: 0;
-  padding: 0;
-  max-width: 100%;
-}
-
-.learn {
-  width: 60%;
-  height: auto;
-  padding: 0;
-  margin: auto;
-  margin-bottom: 10%;
-  margin-top: 10%;
-  display: block;
-}
-
-.blog {
-  width: 100%;
-}
-
-.read {
-  width: 50%;
-  height: auto;
-  padding: 2%;
-  margin: auto;
-  margin-bottom: 2%;
-  margin-top: 2%;
-  display: block;
-}
-
-p {
-  font-weight: $regularWeight;
-  padding: 2%;
-  margin: 0;
-  width: 100%;
-}
-
-.icon {
-  text-align: center;
-}
-
-.icon i {
-  font-size: 50px;
-  color: $primaryColor;
-  padding: 2%;
-}
-
-.icon i:hover {
-  color: $secondaryColor;
-}
 
 footer {
   text-align: center;
